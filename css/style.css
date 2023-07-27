@@ -422,7 +422,8 @@ footer .imagen-efec img:hover {
     padding-bottom: 10px;
   }
   header img {
-    width: 20%;
+    width: 50%;
+    max-width: 200px;
     padding-left: 0;
   }
   /*---------------INDEX---------------*/
@@ -444,7 +445,7 @@ footer .imagen-efec img:hover {
     line-height: 30px;
   }
   .banner img {
-    width: 100%;
+    max-width: 50%;
     margin: 2%;
   }
   .banner .imagen-banner {
@@ -456,7 +457,7 @@ footer .imagen-efec img:hover {
     font-size: 0.8rem;
   }
   .datos img {
-    width: 80%;
+    width: 40%;
     padding-left: 20px;
   }
   /*INFO*/
@@ -546,6 +547,167 @@ footer .imagen-efec img:hover {
   .tips .cuidadosFlex iframe {
     width: 400px;
     height: 220px;
+  }
+  /*---------------CONTACTO---------------*/
+  .formulario h1 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 3.3rem;
+  }
+  .formulario p {
+    text-align: justify;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  /*---------------FOOTER---------------*/
+  footer div {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer img {
+    padding: 10px 10px;
+  }
+  footer .imagen-efec img {
+    padding-top: 0;
+  }
+}
+/*TABLET*/
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+  header nav {
+    width: 100%;
+  }
+  header ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  header img {
+    width: 50%;
+    max-width: 200px;
+    padding-left: 0;
+  }
+  /*---------------INDEX---------------*/
+  /*BANNER*/
+  .banner h1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 3.3rem;
+  }
+  .banner h2 {
+    padding-bottom: 10px;
+  }
+  .banner h3 {
+    width: 100%;
+    text-align: justify;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  .banner img {
+    max-width: 50%;
+  }
+  .banner .imagen-banner {
+    max-width: 100%;
+    padding: 30px;
+  }
+  /*DATOS*/
+  .datos p {
+    font-size: 0.8rem;
+  }
+  .datos img {
+    width: 30%;
+    padding-left: 20px;
+  }
+  /*INFO*/
+  .info {
+    padding: 5%;
+  }
+  .info .text-info {
+    width: 100%;
+    text-align: justify;
+    padding-bottom: 20px;
+  }
+  .info .text-info p {
+    font-size: 1.1rem;
+  }
+  .info .text-info ul {
+    font-size: 0.9rem;
+    padding-right: 10%;
+  }
+  .info .text-info img {
+    width: 80%;
+  }
+  /*---------------PRODUCTOS---------------*/
+  .produc {
+    padding-bottom: 20px;
+  }
+  .produc h1 {
+    padding-top: 10px;
+    font-size: 3.3rem;
+    text-align: center;
+  }
+  .produc h2 {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 30px;
+  }
+  .produc p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .produc .card {
+    width: 70%;
+    height: 80%;
+    border: 1px solid #bab3aa;
+    margin-left: 10%;
+    padding: 15px;
+  }
+  .produc .row {
+    margin: 0;
+  }
+  .produc .tarjetas .col {
+    flex-basis: 50%;
+  }
+  /*---------------FRAGANCIAS---------------*/
+  .fragancia-grid {
+    grid-template-areas: "h1 h1" "h2 h2" "img1 cuadro1" "img2 cuadro2" "img3 cuadro3" "img4 cuadro4" "img5 cuadro5" "img6 cuadro6";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 70px 100px repeat(6, auto);
+    padding-right: 10%;
+  }
+  .fragancia-grid h1 {
+    padding-top: 10px;
+    font-size: 3.3rem;
+    justify-self: center;
+  }
+  .fragancia-grid h2 {
+    font-size: 1rem;
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: justify;
+  }
+  .fragancia-grid img {
+    width: 90%;
+    padding-left: 10%;
+  }
+  .fragancia-grid p {
+    width: 100%;
+  }
+  .fragancia-grid div {
+    justify-items: left;
+  }
+  /*---------------CUIDADOS---------------*/
+  .tips h1 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 3.3rem;
+  }
+  .tips .cuidadosFlex ul {
+    width: 80%;
+  }
+  .tips .cuidadosFlex iframe {
+    width: 70%;
+    height: 365px;
   }
   /*---------------CONTACTO---------------*/
   .formulario h1 {
