@@ -1,0 +1,47 @@
+.formulario {
+    @include fondo(url(../multimedia/banner.jpg), cover, right, no-repeat);
+
+    p {
+        padding-bottom: 15px;
+        padding-left: 50px;
+    }
+
+    .contacFlex {
+        display: flex;
+        @include flex(column, center, center);
+        padding: 10px 10px 25px;
+
+        form {
+            border: 2px solid #ab9b8a;
+            display: flex;
+            @include flex(column, center, center);
+            padding: 20px;
+        }
+
+        label {
+            padding: 10px;
+        }
+
+        p {
+            padding: 5px;
+        }
+
+        input {
+            width: 300px;
+            padding: 0;
+            margin: 0;
+       }
+
+        textarea {
+            @extend input;
+        }
+
+        select {
+            @extend input;
+        }
+
+        button {
+            @extend input;
+        }
+    }
+}

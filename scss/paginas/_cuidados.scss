@@ -1,0 +1,33 @@
+/*Cuidados*/
+.tips {
+    @include fondo(url(../multimedia/banner.jpg),cover,right,no-repeat);
+
+    .cuidadosFlex {
+        padding: 10px 10px;
+        display: flex;
+        @include flex(column,center,center);
+
+        ul {
+            width: 60%;
+            text-align: justify;
+        }
+
+        li {
+            font-size: 1.1rem;
+            padding-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            padding: 10px;
+            font-size: 1.3rem;
+        }
+
+        iframe {
+            width: 500px;
+            height: 300px;
+            padding: 10px;
+            padding-bottom: 20px;
+        }
+    }
+}

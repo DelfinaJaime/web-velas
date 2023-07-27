@@ -1,0 +1,100 @@
+/*aromas Fragancias*/
+
+.fragancia-grid {
+    @include fondo(url(../multimedia/banner.jpg),cover,right,no-repeat);
+    display: grid;
+    grid-template-areas:
+        "h1 h1  h1  h1"
+        "h2 h2  h2  h2"
+        "img1 cuadro1  img2 cuadro2"
+        "img3 cuadro3 img4 cuadro4"
+        "img5 cuadro5 img6 cuadro6";
+    grid-template-columns:10% auto 10% auto;
+    grid-template-rows: repeat(2, 100px) repeat(3,auto);
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    grid-row-gap: 50px;
+    grid-column-gap: 40px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+    img {
+        width: 100%;
+    }
+
+    p {
+        width: auto;
+        text-align: left;
+        padding: 10px;
+    }
+
+    div {
+        display: flex;
+        @include flex(column,center,center);
+        align-content: center;
+
+    }
+
+    h1 {
+        grid-area: h1;
+        justify-self: left;
+        padding-left: 50px;
+    }
+
+    h2 {
+        grid-area: h2;
+        text-align: center;
+        font-size: 1.5rem;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+    .grid-img-1 {
+        grid-area: img1;
+    }
+
+    .grid-1 {
+        grid-area: cuadro1;
+    }
+
+    .grid-img-2 {
+        grid-area: img2;
+    }
+
+    .grid-2 {
+        grid-area: cuadro2;
+    }
+
+    .grid-img-3 {
+        grid-area: img3;
+    }
+
+    .grid-3 {
+        grid-area: cuadro3;
+    }
+
+    .grid-img-4 {
+        grid-area: img4;
+    }
+
+    .grid-4 {
+        grid-area: cuadro4;
+    }
+    .grid-img-5 {
+        grid-area: img5;
+    }
+
+    .grid-5 {
+        grid-area: cuadro5;
+    }
+    .grid-img-6 {
+        grid-area: img6;
+    }
+
+    .grid-6 {
+        grid-area: cuadro6;
+    }
+}

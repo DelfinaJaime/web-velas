@@ -1,0 +1,17 @@
+$marron: #7D6150;
+$fuentes: 'Merriweather', serif;
+
+/*Mixin*/
+
+@mixin flex ($direc, $just, $align) {
+    flex-direction: $direc;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin fondo ($imagen, $size, $posicion, $repeticion) {
+    background-image: $imagen;
+    background-size: $size;
+    background-position: $posicion;
+    background-repeat: $repeticion;
+}

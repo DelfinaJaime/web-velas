@@ -1,0 +1,98 @@
+/*Header*/
+header {
+    background-color: #e1d9ce;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+
+    nav {
+        width: 50%;
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: baseline;
+        padding: 50px 10px 0 150px;
+        font-size: 1.1rem;
+    }
+    img {
+        width: 130px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 60px;
+        border-radius: 199px 199px 199px 199px;
+        -webkit-border-radius: 199px 199px 199px 199px;
+        -moz-border-radius: 199px 199px 199px 199px;
+        transition: 1s;
+    }
+    img:hover{
+        width: 150px;
+        box-shadow: 0px 1px 39px 8px rgba(171,155,138,0.75);
+-webkit-box-shadow: 0px 1px 39px 8px rgba(171,155,138,0.75);
+-moz-box-shadow: 0px 1px 39px 8px rgba(171,155,138,0.75);
+    }
+}
+
+
+.btn {
+    background: #ab9b8a;
+    border: 1px solid #ab9b8a;
+    font-family: $fuentes;
+    color: #e1d9ce;
+    transition: 1s;
+
+    &:hover {
+        background-color: $marron;
+        border-color: $marron;
+        font-size: 1.2rem;
+    }
+
+    &:active {
+        background-color: $marron;
+        border-color: $marron;
+    }
+}
+
+/*Footer*/
+footer {
+    background-color: #e1d9ce;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    div {
+
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+    }
+
+    img {
+        width: 50px;
+        padding-right: 10px;
+        transition:1s;
+    }
+    img:hover{
+        width: 65px;
+    }
+
+    .imagen-efec {
+        text-align: center;
+        transition: 1s;
+
+        img {
+            width: 65px;
+        }
+        img:hover{
+            width: 80px;
+        }
+    }
+}
